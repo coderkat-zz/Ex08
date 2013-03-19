@@ -13,7 +13,7 @@ def make_chains(text, text2):
      # Build dictionary where key = tuple and value = following word
     word_next_dict = {}
     pos = 0
-
+    #Create word pairs of every combination from within source texts
     for word in list_of_words[0:-2]:
         pair = (list_of_words[pos], list_of_words[pos+1])
         if pair not in word_next_dict:

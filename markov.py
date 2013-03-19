@@ -12,7 +12,6 @@ def make_chains(text):
     word_next_dict = {}
     pos = 0
 
-
     for word in list_of_words[0:-2]:
         pair = (list_of_words[pos], list_of_words[pos+1])
         if pair not in word_next_dict:

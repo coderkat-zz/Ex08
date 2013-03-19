@@ -47,7 +47,6 @@ More importantly though, if you pick a license because of your particular belief
 Because, I am releasing my code for you to use, unlike most of those corporations you seem to love.
 
 However, I’d like to explain why I use the GPL after decades of writing open source software and after a couple of “successful” projects. These are my reasons for using it, and only apply to me and what I want to do with my software from now on. You are free to your own opinions and choices, and I hope you’ll respect mine.
-
 It’s the author’s right
 
 I believe that whatever the author wants to do with his or her works is their right. They wrote it, despite everyone telling them it wouldn’t work. They slaved over it rather than going out with friends. They debugged it, and wrote documentation for it so everyone else could use it. They may have even spent a part of their time promoting it and helping people with it. All for free, and for whatever reason they choose.
