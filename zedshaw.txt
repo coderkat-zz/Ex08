@@ -20,30 +20,23 @@ you shit your pants at them.
 It's not like you're going to give me a job 
 so fuck it, 
 I'll say fuck. 
-fuck fuck fuck fuck fuck*
+fuck fuck fuck fuck fuck
 Did I mention? 
 fuck 
 I also build
 guitars
 I use my skills at electronics and woodworking to build instruments I want to play. I play them in most of my music. I write books that teach people what I know about computers. A lot of people have learned to code from them, so if you want to learn to code, go read one. I am much nicer in my books and they are PG-13. I write essays and rants that entertain people. I may start writing fiction soon too. It may have music in it.
 Use a spacebar or arrow keys to navigate
-It seemed people who support the BSD license assumed that I was saying the BSD license was bad because I said I use the GPL these days. I never said BSD was bad, I just said I use the GPL now when I release my software. The BSD license is just fine, if that’s what you want to use.
-
 
 Wait a minute, is this some kind of trick? I thought BSD was all about “true freedom” to use their code? When did they start getting pissy about people not returning the favor? I thought that whole “viral” thing was why they hated the GPL? I guess I’m not in Lawrence, Kansas anymore.
 
 What I’m seeing is the following double standard among BSD license users:
 
-If you are a commercial company like Apple or Google then BSD licensors love you and want you to have “true freedom”.
-If you are a GPL project, they pressure you into releasing your code BSD licensed and get offended because you use their code.
-You cannot have it both ways people. Either your code is “truly free” for everyone to use, or it’s not and you need to change the license. If you BSD license it, and a GPL project uses it, well, I’m sorry to say, but you chose that license so everyone could use your code how they want…
 
 …whether or not you get to use their code in return.
 
 And remember, you say the complaint is you can’t use my code, but you also can’t use Apple’s code, or even see it, and they’ll sue you if you try to even look at it, or talk about it. At least Lamson is a server you can use all you want and probably never have to release.
 
-
-There’s a deeper problem here than just GPL vs. BSD. First off, I don’t believe in idiotic dichotomies like this. I like BSD projects, and I release some stuff BSD too. I actually plan on releasing a few separate libraries from Lamson (like argument parsing) as BSD code. Copy-paste until your fingers get sore.
 
 The real problem here is that a bunch of people who give software away get mad at other people who give software away because of some retarded difference in their interpretation of “free”.
 
@@ -53,13 +46,9 @@ More importantly though, if you pick a license because of your particular belief
 
 Because, I am releasing my code for you to use, unlike most of those corporations you seem to love.
 
-
-
-In the Python world the GPL is frequently frowned on, with most people preferring to use a more permissive license such as BSD, MIT, or Python’s. It’s understandable then when people get angry because I’ve licensed Lamson under the GPL. Many people just hate the license, since they feel it goes contrary to the spirit of Python.
-
 However, I’d like to explain why I use the GPL after decades of writing open source software and after a couple of “successful” projects. These are my reasons for using it, and only apply to me and what I want to do with my software from now on. You are free to your own opinions and choices, and I hope you’ll respect mine.
 
-It’s The Author’s Right
+It’s the author’s right
 
 I believe that whatever the author wants to do with his or her works is their right. They wrote it, despite everyone telling them it wouldn’t work. They slaved over it rather than going out with friends. They debugged it, and wrote documentation for it so everyone else could use it. They may have even spent a part of their time promoting it and helping people with it. All for free, and for whatever reason they choose.
 
@@ -72,11 +61,5 @@ I really don’t care what license people use on their software, it’s their so
 
 Because I want to, and if you disagree with it then don’t use my software. It’s as simple as that.
 
-I Don’t Want To Be Ignored Again
-
-I wrote Mongrel and then gave it away, on the hopes that it would help a bunch of other people, and that giving it away would come back to me in some way. Maybe a job, or some respect, or hell maybe my own company doing more software like it.
-
-Mongrel was a wild success, and lots and lots of companies are making lots and lots of money off it. It not only powered Rails, but nearly every Ruby web framework, other Ruby web servers, and was even ported to other languages. Mongrel is and was a super project and I’m really proud of it.
-
-Let me give you an idea of how advanced Mongrel was. Remember the “new” attack on Apache called Slowloris that was recently released? I actually predicted that attack, and wrote Mongrel so that it was resistant (as much as Ruby could let me). I called it the “trickle attack” and even demonstrated it. That was in 2004. Five years ago. I even added it as an attack to RFuzz in 2005.
+I don’t want to be ignored again
 

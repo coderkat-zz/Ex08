@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
 from sys import argv
-#import twitter
+import twitter
 import random
-#api = twitter.Api(consumer_key='CYZGmsNeiOm47FrCLeZ3rA', consumer_secret='GGqsSqxdSDUdFqBfk3qRzzrv1Khk6Pkdmwrkb2oXo',access_token_key='1278908089-EqHKTzDyF5rtCnaeTiZs1c0LaqNoa80dNHOKpcQ', access_token_secret='oNhP6XbDpd7srl1AQnR9zRsVNu5Wnc83C31W0IU5GzQ')
+api = twitter.Api(consumer_key='mbWoAN3h7mwljdilgYqFg', consumer_secret='HrRAm6sLwAjRHYt2bIWiNfJZi16RL9DRyweVuUnGBA',access_token_key='1279424420-fIQCVa7AiCvroI3gAo0SqjaGrEjr7BrLm3b7uQa', access_token_secret='NvCVCnniV5DbyqkcRjtK8mFwsHjdYMHGUKsdD1sajk')
 
 def make_chains(text, text2):
     """Takes an input text as a string and returns a dictionary of
@@ -41,21 +41,25 @@ def make_text(word_next_dict):
 
     # create random text list: find a word associated with last 2 and append list
     while len(final_text) < 12:
+        # look for sentence endings and re-choose start tuple
         if '.' in final_text[-1]:
+            start = random.choice(word_next_dict.keys())
+            # make sure tuple begins with a capitalized string
             while not start[0].isupper():
-            #     start = random.choice(word_next_dict)
-            # final_text.append(start)
+                start = random.choice(word_next_dict.keys())
+            final_text.append(start[0])
+            final_text.append(start[1])
         last_words = (final_text[-2], final_text[-1]) 
         next_guy = word_next_dict[last_words][random.randrange(len(word_next_dict[last_words]))] # finds length of wordlist, randomly picks 
         final_text.append(next_guy)
 
-    to_tweet = ' '.join(final_text)
+    to_tweet = ' '.join(final_text) + '.'
     print to_tweet
     return to_tweet
 
-# def twitter(to_tweet):
-#     status = api.PostUpdate(to_tweet)
-#     print status.text    
+def twitter(to_tweet):
+    status = api.PostUpdate(to_tweet)
+    print status.text    
    
 
 def main():
@@ -73,7 +77,7 @@ def main():
 
     word_next_dict = make_chains(text, text2)
     to_tweet = make_text(word_next_dict)
-    # tweet = twitter(to_tweet)
+    tweet = twitter(to_tweet)
 
 
 
